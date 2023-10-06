@@ -2,7 +2,9 @@ package murach.email;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
@@ -51,6 +53,11 @@ public class EmailListServlet extends HttpServlet
         // create the Date object and store it in the request
         Date currentDate = new Date();
         request.setAttribute("currentDate", currentDate);
+        
+        GregorianCalendar currentDate1 = new GregorianCalendar();
+        int currentYear = currentDate1.get(Calendar.YEAR);
+        
+        request.setAttribute("currentYear", currentYear);
 
         // create users list and store it in the session
         String path = getServletContext().getRealPath("/WEB-INF/EmailList.txt");

@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html>
+<!--<html>
 <head>
     <meta charset="utf-8">
     <title>Murach's Java Servlets and JSP</title>
     <link rel="stylesheet" href="styles/main.css" type="text/css"/>    
 </head>
 
-<body>
+<body>-->
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<%@ include file="/includes/header.html"%>
     <h1>Thanks for joining our email list</h1>
 
     <p>Here is the information that you entered:</p>
@@ -22,8 +26,8 @@
     <span>${requestScope.currentDate}</span><br>
     
     <label>First two Cus: </label><br>
-    <span>${sessionScope.users[0]}</span><br>
-    <span>${users[1]}</span><br>
+    <span>${sessionScope.users[0].email}</span><br>
+    <span>${sessionScope.users[1].email}</span><br>
     
     <label>customer service email: </label>
     <span> ${initParam['custServEmail']}
@@ -42,5 +46,7 @@
         <input type="submit" value="Return">
     </form>
         
-</body>
-</html>
+    <%@ include file="/includes/footer.jsp"%>
+
+<!--</body>
+</html>-->
