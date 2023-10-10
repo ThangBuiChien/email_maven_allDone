@@ -37,3 +37,8 @@ br {
 .margin_left {
     margin-left: 0.5em;
 }
+
+.returnHome{
+    font-size: 20px;
+    text-align: center;
+}
