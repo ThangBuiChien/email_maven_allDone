@@ -19,13 +19,13 @@
     <form action="abc" method="post">
         <input type="hidden" name="action" value="add">        
         <label class="pad_top">Email:</label>
-        <input type="email" name="email" 
+        <input type="email" name="email" required
                value=${user.email}><br>
         <label class="pad_top">First Name:</label>
-        <input required type="text" name="firstName" 
+        <input required type="text" name="firstName"  required
                value=${user.firstName}><br>
         <label class="pad_top">Last Name:</label>
-        <input required type="text" name="lastName" 
+        <input required type="text" name="lastName" required
                value=${user.lastName} ><br>        
         <label>&nbsp;</label>
         <input type="submit" value="Join Now" class="margin_left">
