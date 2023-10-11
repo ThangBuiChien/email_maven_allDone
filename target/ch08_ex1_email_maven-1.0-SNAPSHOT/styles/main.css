@@ -42,3 +42,14 @@ br {
     font-size: 20px;
     text-align: center;
 }
+
+.btnGetPost{
+    color: blue;
+    display: inline-block;
+    margin: 10px;
+
+}
+
+ .btnGetPost:first-child {
+    margin-left: 0; /* Remove margin for the first form */
+}

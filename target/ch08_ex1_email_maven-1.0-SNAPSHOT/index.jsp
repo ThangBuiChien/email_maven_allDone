@@ -29,8 +29,23 @@
                value=${user.lastName} ><br>        
         <label>&nbsp;</label>
         <input type="submit" value="Join Now" class="margin_left">
-    </form>
+    </form >
         
+    <br>
+    <p>&copy; Copyright ${currentYear} Mike Murach &amp; Associates</p>
+    
+    <br> <br>
+    <h1> Test get and post method </h1>
+    <p> Click those button to check HTTP GET and HTTP POST</p>
+    <form class = "btnGetPost" action = "getpost" method="post">
+        <button>Test post method</button>
+        
+    </form>
+    <form class = "btnGetPost" action = "getpost" method="get">
+        <button>Test get method</button>
+        
+    </form>
+   
     <%@ include file="/includes/footer.jsp"%>
 
 <!--</body>

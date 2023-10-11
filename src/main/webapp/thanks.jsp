@@ -45,7 +45,7 @@
         <input type="hidden" name="action" value="join">
         <input type="submit" value="Return">
     </form>
-        
+    
     <%@ include file="/includes/footer.jsp"%>
 
 <!--</body>
